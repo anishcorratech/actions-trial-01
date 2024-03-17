@@ -1,5 +1,23 @@
 name: "Test2 Deployment"
 
+##########################################################################################################################
+# Readme
+##########################################################################################################################
+#
+# When using workflow_dispatch, it's now possible to have choice, boolean 
+# and environment inputs instead of only just strings. choice is a dropdown, 
+# boolean is a checkbox and environment is like choice but will auto-populate 
+# with all environments configured in your repos settings.
+#
+# Note that inputs can now be accessed directly using the inputs context, 
+# instead of using github.event.inputs.
+#
+# URL: https://stackoverflow.com/questions/69296314/dropdown-for-github-workflows-input-parameters
+#      https://github.blog/changelog/2022-06-10-github-actions-inputs-unified-across-manual-and-reusable-workflows/
+#      https://dev.to/this-is-learning/manually-trigger-a-github-action-with-workflowdispatch-3mga
+#
+##########################################################################################################################
+
 on:
   workflow_dispatch:
     inputs:
